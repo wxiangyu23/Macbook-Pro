@@ -125,40 +125,7 @@ student_management_system/
 ├── common.h            # 公共定义和常量
 ├── Makefile            # 项目构建配置
 └── README.md           # 项目说明文档
-数据文件
-students.dat - 学生信息数据文件
 
-teachers.dat - 教师信息数据文件
-
-编译运行
-编译项目
-bash
-make
-清理编译文件
-bash
-make clean
-运行程序
-bash
-./student_management
-调试模式
-bash
-make debug
-gdb ./student_management
-使用说明
-启动系统
-运行程序后显示登录界面
-
-选择用户类型（学生/教师/管理员）
-
-输入用户名和密码
-
-登录成功后进入对应功能菜单
-
-功能操作
-使用数字选择菜单选项
-
-按照提示输入相关信息
-
-修改操作会提示保存确认
-
-系统退出时自动保存数据
+管理员账户密码
+admin
+admin123
