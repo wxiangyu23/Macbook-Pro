@@ -119,7 +119,7 @@ int stu_rfile() {
 
 // 保留函数名show_stu，仅修复排序逻辑和输出错误
 
-// 新增：删除学生信息
+// 删除学生信息
 void del_student() {
     len = stu_rfile();
     if (len == 0) {
@@ -155,7 +155,7 @@ void del_student() {
     printf("删除成功！\n");
 }
 
-// 新增：修改学生信息
+// 修改学生信息
 void edit_student() {
     len = stu_rfile();
     if (len == 0) {
@@ -209,7 +209,7 @@ void edit_student() {
 }
 
 
-// 新增：按学号查找
+// 按学号查找
 void find_by_number(const char *num) {
     int found = 0;
     for (int i = 0; i < len; i++) {
@@ -235,7 +235,7 @@ void find_by_number(const char *num) {
 }
 
 
-// 新增：按姓名查找
+// 按姓名查找
 void find_by_name(const char *name) {
     int found = 0;
     for (int i = 0; i < len; i++) {
@@ -259,7 +259,7 @@ void find_by_name(const char *name) {
     }
 }
 
-// 新增：按班级查找
+// 按班级查找
 void find_by_group(const char *group) {
     int found = 0;
     for (int i = 0; i < len; i++) {
@@ -283,7 +283,7 @@ void find_by_group(const char *group) {
     }
 }
 
-// 新增：查找学生入口
+// 查找学生入口
 void find_student() {
     len = stu_rfile();
     if (len == 0) {
@@ -335,7 +335,7 @@ void sort_by_number() {
     }
 }
 
-// 新增：按名次排序
+// 按名次排序
 void sort_by_rank() {
     for (int i = 0; i < len - 1; i++) {
         for (int j = 0; j < len - 1 - i; j++) {
@@ -348,7 +348,7 @@ void sort_by_rank() {
     }
 }
 
-// 新增：按科目排序（1:数学, 2:C语言, 3:语文）
+// 按科目排序（1:数学, 2:C语言, 3:语文）
 void sort_by_subject(int subject) {
     for (int i = 0; i < len - 1; i++) {
         for (int j = 0; j < len - 1 - i; j++) {
@@ -376,7 +376,7 @@ void sort_by_subject(int subject) {
     }
 }
 
-// 新增：计算科目平均分
+// 计算科目平均分
 float calculate_average(int subject) {
     float sum = 0;
     for (int i = 0; i < len; i++) {
