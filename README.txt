@@ -1,6 +1,6 @@
-# Factory Vital Signs Monitoring System - Project Summary
+#  Vital Signs Monitoring System - Project Summary
 
-This C-based project implements a real-time monitoring system that simulates and tracks factory vital signs including heart rate, blood oxygen, and temperature. The system features a multi-threaded architecture with three core components: a sensor thread that generates realistic simulated data, a display thread that renders real-time metrics using ncurses terminal UI, and data processing for anomaly detection.
+This C-based project implements a real-time monitoring system that simulates and tracks vital signs including heart rate, blood oxygen, and temperature. The system features a multi-threaded architecture with three core components: a sensor thread that generates realistic simulated data, a display thread that renders real-time metrics using ncurses terminal UI, and data processing for anomaly detection.
 
 Technically, the project leverages pthreads for concurrent execution, using mutex locks to ensure thread-safe access to shared data structures. The `VitalSigns` struct serves as the central data model, protected by a mutex to prevent race conditions during multi-threaded access. The alert system triggers visual (red text) and auditory warnings for abnormal readings, while all data is persisted to a CSV log file with formatted timestamps.
 
